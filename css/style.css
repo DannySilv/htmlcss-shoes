@@ -15,6 +15,10 @@ ul {
     list-style: none;
 }
 
+img {
+    width: 100%;
+}
+
 .bg-red {
     background-color: red;
 }
@@ -27,57 +31,51 @@ ul {
     background-color: yellow;
 }
 
-/* ABSOLUTE CENTER LOW for shoes img and h2 */
-.container {
-    position: absolute;
-    bottom: 2.5%;
-    left: 25%;
-    width: 50%;
-    text-align: center;
-    font-size: 1.3em;
-}
-
 /* MENU */
 .menu {
     position: fixed;
-    top: 20px;
-    right: 10px;
+    top: 1em;
+    right: 1em;
     color: white;
     z-index: 100;
 }
 
-.menu li, a {
+.menu-inline li {
     display: inline-block;
-    font-size: 1.2em;
-    font-weight: bold;
-    width: 1.2em;
-    height: 1.2em;
-    line-height: 1.2em;
-    text-align: center;
-    vertical-align: top;
 }
 
-.menu a {
+.menu-inline li a {
+    display: inline-block;
     background-color: white;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
     text-decoration: none;
     color: black;
-    border-radius: 50%;
-}
-
-.menu li {
-    margin-right: 2em;
+    font-weight: bold;
 }
 
 /* MAIN-SHOES */
 .shoes-container {
     position: relative;
-    bottom: 0;
-    left: 0;
     height: 100vh;
+    width: 100%;
 }
 
-.container img {
-    width: 100%;
+/* ABSOLUTE CENTER LOW for shoes img and h2 */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 4vw;
 }
 
 #blue-shoes {
