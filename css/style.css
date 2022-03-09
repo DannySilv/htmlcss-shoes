@@ -55,7 +55,15 @@ img {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.4);
 }
+
+.menu-inline li a:hover,
+.menu-inline li a:active,
+.menu-inline li a:focus {
+    box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.8);
+}
+
 
 /* MAIN-SHOES */
 .shoes-container {
@@ -76,18 +84,6 @@ img {
 
 .container h2 {
     font-size: 4vw;
-}
-
-#blue-shoes {
-    object-fit: cover;    
-}
-
-#white-shoes {
-    object-fit: cover;    
-}
-
-#green-shoes {
-    object-fit: cover;    
 }
 
 #yellow {
